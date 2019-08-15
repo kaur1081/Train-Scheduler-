@@ -17,14 +17,14 @@ $("#addTrain").on("click", function (event) {
 
   var trainName = $("#search-train").val().trim();
   var destination = $("#search-destination").val().trim();
-  var frequency = $("#freqInMin").val().trim();
   var trainArival = $("#train-time").val().trim();
+  var frequency = $("#freqInMin").val().trim();
 
   var newTrainTime = {
     Name: trainName,
     destination: destination,
-    frequency: frequency,
-    Arival: trainArival
+    Arival: trainArival,
+    frequency: frequency
   }
 
   database.ref().push(newTrainTime);
@@ -33,31 +33,36 @@ $("#addTrain").on("click", function (event) {
 // clear all
 $("#search-train").val("");
 $("#search-destination").val("");
-$("#freqInMin").val("");
 $("#train-time").val("");
+$("#freqInMin").val("");
 
-database.ref().on("child_added", function (childSnapshot) {
- 
+
+database.ref().on("child_added",function (childSnapshot) {
+
 
   var trainName = childSnapshot.val().Name;
   var destination = childSnapshot.val().destination;
-  var frequency = childSnapshot.val().frequency;
   var trainArrival = childSnapshot.val().Arival;
+  var frequency = childSnapshot.val().frequency;
+  
 
-  // var trainTimeConv = moment(Arival, "hh:mm a").subtract(1, "years");
-  // var currentToFirst = moment().diff(moment(trainTimeConv), "minutes");
+  var trainTimeConv = moment(trainArrival, "hh:mm a").subtract(1, "years");
+  console.log("got it!", trainTimeConv)
+  var currentToFirst = moment().diff(moment(trainTimeConv), "minutes");
 
-  // var timeLeft = currentToFirst % frequency;
-  // var minutesAway = frequency - timeLeft;
-  // var nextArrival = moment().add(minutesAway, "minutes").format("hh:mm a");
+  var timeLeft = currentToFirst % frequency;
+  var minutesAway = frequency - timeLeft;
+  var nextArrival = moment().add(minutesAway, "minutes").format("hh:mm a");
 
-  // Create the new row
+console.log(nextArrival);
+  
+// Create the new row
   var newRow = $("<tr>").append(
     $("<td>").text(trainName),
     $("<td>").text(destination),
     $("<td>").text(frequency),
-    // $("<td>").text(nextArrival),
-    // $("<td>").text(trainArrival)
+    $("<td>").text(nextArrival),
+    $("<td>").text(trainArrival)
 
   );
   $("#train-table > tbody").append(newRow);
