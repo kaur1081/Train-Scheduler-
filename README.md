@@ -1,7 +1,17 @@
 # Train-Scheduler-
-train time schedule
-where when we enter time and schedue it shows in data above
-we used htm/css/js/jquery/firebase/and we used moment
-pretty challenge ut got it 
-had tough time in apeending my results which i did because of silly spelling mistake
+Train Time Schedule
+In this app when we enter time and schedue for a train it shows up in the data above.
+This is my initial learning project. Had a tough time in apending my results initially.
 
+## Screenshots
+![ Train-Scheduler! ](https://github.com/kaur1081/Train-Scheduler-/blob/master/train.PNG)
+
+## Technology Used
+- Html
+- Css
+- JavaScript
+- jquery
+- firebase
+- moment
+
+Dveloper: Karishma Hattar
