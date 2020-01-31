@@ -13,6 +13,6 @@ This is my initial learning project. Had a tough time in apending my results ini
 - JavaScript
 - jquery
 - firebase
-- moment
+- Moment
 
 ## Developer: Karishma Hattar
