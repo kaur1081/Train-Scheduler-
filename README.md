@@ -6,7 +6,7 @@ This is my initial learning project I did struggle to apend my results initially
 This app is a responsive design using Bootstrap.
 
 ## Screenshots
-![ Train-Scheduler! ](https://github.com/kaur1081/Train-Scheduler-/blob/master/train.PNG)
+![ Train-Scheduler! ](https://github.com/kaur1081/Train-Scheduler-/blob/master/bgscreen1.jpg)
 
 ## Technology Used
 - Html
