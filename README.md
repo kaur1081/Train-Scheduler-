@@ -7,7 +7,10 @@ This app is a responsive design using Bootstrap.
 
 ## Screenshots
 ![ Train-Scheduler! ](https://github.com/kaur1081/Train-Scheduler-/blob/master/bgscreen1.jpg)
+
+
 ![ Train-Scheduler! ](https://github.com/kaur1081/Train-Scheduler-/blob/master/screen%202.jpg)
+
 ## Technology Used
 - Html
 - Css
