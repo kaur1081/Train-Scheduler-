@@ -15,4 +15,4 @@ This is my initial learning project. Had a tough time in apending my results ini
 - firebase
 - moment
 
-Dveloper: Karishma Hattar
+## Developer: Karishma Hattar
